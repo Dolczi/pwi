@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jakub Dolecki 210847</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                Dolczi
+            </div>
+        </nav>
+        <h1>
+            Tic-tac-toe
+        </h1>
+        <div>
+            <div class="column left">
+                <h2>
+                    Game menu
+                </h2>
+                <div class="projects list">
+                    <button type="button" class="collapsible">Mode</button>
+                    <div class="hidden">
+                        <button type="button">1 Player</button>
+                        <button type="button">2 Player</button>
+                    </div>
+                    <button type="button" class="collapsible">Difficulty</button>
+                    <div class="hidden">
+                        <button type="button">Easy</button>
+                        <button type="button">Medium</button>
+                        <button type="button">Hard</button>
+                    </div>
+                    <button type="button" id="startButton">Start Game</button>
+                </div>
+            </div>
+            <div class="column middle">
+                <h2 class="content" id="infoText">
+                    Game
+                </h2>
+                <div class="board">
+                    <div class="cell" cellIndex="0"></div>
+                    <div class="cell" cellIndex="1"></div>
+                    <div class="cell" cellIndex="2"></div>
+                    <div class="cell" cellIndex="3"></div>
+                    <div class="cell" cellIndex="4"></div>
+                    <div class="cell" cellIndex="5"></div>
+                    <div class="cell" cellIndex="6"></div>
+                    <div class="cell" cellIndex="7"></div>
+                    <div class="cell" cellIndex="8"></div>
+                </div>
+                <button id="restartButton">Restart</button>
+            </div>
+            <div class="column right">
+                <h2>
+                    Menu
+                </h2>
+                <div class="menu list">
+                    <a href="index.html">Home</a>
+                    <a href="">About me</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+        </div>
+        <script src="tictactoe.js"></script>
+    </body>
+</html>

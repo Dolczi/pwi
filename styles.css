@@ -2,9 +2,44 @@
   background-color: black;
   box-sizing: border-box;
   color: white;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Perfect DOS VGA 437', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.board {
+  aspect-ratio: 1/1;
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.cell {
+  align-items: center;
+  background-color: black;
+  border: 2px solid white;
+  cursor: pointer;
+  display: flex;
+  font-size: 9vw;
+  height: 100%;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+}
+
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
 }
 
 .column {
@@ -18,6 +53,12 @@
   border-color: white;
   border-style: solid;
   padding: 10px;
+}
+
+.hidden{
+  display: none;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 .list{
@@ -51,14 +92,37 @@
   width: 20%;
 }
 
+.row{
+  display: flex;
+}
+
 a{
+  font-size: 15px;
   margin-bottom: 10px;
+  text-align: center;
   text-decoration: none;
+  width: 100%;
 }
 
 a:hover {
   color: black;
   background-color: white;
+}
+
+button{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
 }
 
 h1 {
