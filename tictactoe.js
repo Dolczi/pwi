@@ -50,7 +50,7 @@ function startGame(){
 
 function cellClicked(){
 
-  const cellIndex = this.getAttribute("cellIndex");
+  const cellIndex = this.id;
   
   if(boardState[cellIndex] == "" && isGameActive == true){
     cells[cellIndex].textContent = currentPlayer;
